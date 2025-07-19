@@ -1,0 +1,1 @@
+IDRViewer.config = {"pagecount":1,"title":"","author":"doc2pdf","subject":"","keywords":"","creator":"Writer","producer":"LibreOffice 7.0","creationdate":"D:20240204163759+01'00'","moddate":"","trapped":"","fileName":"Günlük_700_TL_Fatura_(2).pdf","bounds":[[907,1284]],"bookmarks":[],"thumbnailType":"jpg","pageType":"html","pageLabels":[]};
