@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo", sans-serif;
+  color: #111216;
+  position: relative;
+  background-color: #383b50;
+}
+
+body.login {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo", sans-serif;
+  color: #111216;
+  background-color: #383b50;
+  position: relative;
+}
+
+html {
+  font-family: "Exo", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  transition: all 0.3s ease-out 0s;
+  text-decoration: none;
+}
+a:hover {
+  transition: all 0.3s ease-out 0s;
+  text-decoration: none;
+}
+
+button {
+  transition: all 0.3s ease-out 0s;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-transition: background-color 0s 600000s, color 0s 600000s;
+  transition: background-color 0s 600000s, color 0s 600000s;
+}
+
+::-moz-placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder {
+  color: #fff;
+}
+
+.row-no-gutter {
+  margin: 0;
+}
+.row-no-gutter > * {
+  padding: 0;
+}
+
+.row-5-gutter {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.row-5-gutter > * {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.row-small-gutter {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+}
+.row-small-gutter > * {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.row-middle-gutter {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.row-middle-gutter > * {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.row-large-gutter {
+  margin-left: -50px;
+  margin-right: -50px;
+}
+.row-large-gutter > * {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.row-10-gutter {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.row-10-gutter > * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.loginPanel {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+.loginPanel .loginPanel-content {
+  background-color: #232533;
+  width: 600px;
+  padding: 75px 45px 55px 45px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loginPanel .loginPanel-content .loginPanel-logo img {
+  width: 300px;
+  border-radius: 3px;
+}
+.loginPanel .loginPanel-content .loginPanelItem,
+.loginPanel .loginPanel-content .loginPanelSubmit {
+  margin: 10px 0;
+  width: 300px;
+  font-size: 15px;
+}
+.loginPanel .loginPanel-content .loginPanelItem input,
+.loginPanel .loginPanel-content .loginPanelSubmit input {
+  padding: 12px 15px;
+  width: 100%;
+  outline: 0;
+  color: #d9dae9;
+  background: #3f4257;
+  font-size: 0.875em;
+  font-weight: 400;
+  border: none;
+  border-radius: 3px;
+}
+.loginPanel .loginPanel-content .loginPanelItem button,
+.loginPanel .loginPanel-content .loginPanelSubmit button {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  background: #38a9ff;
+  border-radius: 3px;
+}
+
+.main .mainLeft {
+  width: 250px;
+  float: left;
+  position: fixed;
+  z-index: 99;
+}
+.main .mainLeft .mainLeftBackground {
+  background-color: #232533;
+  height: 100vh;
+  color: #d9dae9;
+}
+.main .mainLeft .mainLeftBackground .mainLeftLogo img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .mainLeft .mainLeftBackground .mainLeftMenu {
+  padding: 10px;
+}
+.main .mainLeft .mainLeftBackground .mainLeftMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main .mainLeft .mainLeftBackground .mainLeftMenu ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 15px;
+  position: relative;
+  background-color: #383b50;
+  padding: 10px;
+  font-weight: 300;
+  position: relative;
+}
+.main .mainLeft .mainLeftBackground .mainLeftMenu ul li ul {
+  position: absolute;
+  width: 200px;
+  z-index: 99;
+  left: 220px;
+  top: -5px;
+  display: none;
+  background-color: #232533;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-left: 1px solid #383b50;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.main .mainLeft .mainLeftBackground .mainLeftMenu ul li ul li {
+  background-color: #232533;
+  margin-bottom: 0px;
+  padding: 10px 0px;
+}
+.main .mainLeft .mainLeftBackground .mainLeftMenu ul li a {
+  color: #d9dae9;
+  cursor: pointer;
+}
+.main .mainLeft .mainLeftBackground .mainLeftMenu ul li a:hover {
+  color: #38a9ff;
+}
+.main .mainLeft .mainLeftBackground .mainLeftMenu ul li a i {
+  margin-right: 5px;
+  color: #0099e5;
+}
+.main .mainCenter {
+  width: calc(100% - 250px);
+  float: left;
+  position: relative;
+  left: 250px;
+}
+.main .mainCenter .mainCenterBackground {
+  background-color: #383b50;
+  color: #d9dae9;
+  height: 100vh;
+  padding: 20px;
+}
+.main .mainCenter .mainCenterBackground .mainBarTitle {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.main .mainCenter .mainCenterBackground .customTable {
+  margin-top: 15px;
+}
+.main .mainCenter .mainCenterBackground .customTable table {
+  border: 1px solid rgba(179, 179, 179, 0.15);
+}
+.main .mainCenter .mainCenterBackground .customTable thead {
+  background-color: #232533;
+}
+.main .mainCenter .mainCenterBackground .customTable thead th {
+  padding: 10px;
+  border-left: 1px solid rgba(179, 179, 179, 0.15);
+  color: #9b9dab;
+  font-weight: 400;
+  font-size: 14px;
+}
+.main .mainCenter .mainCenterBackground .customTable tbody {
+  background-color: #232533;
+}
+.main .mainCenter .mainCenterBackground .customTable tbody tr {
+  color: #9b9dab;
+  font-weight: 400;
+  font-size: 14px;
+}
+.main .mainCenter .mainCenterBackground .customTable tbody tr td {
+  border-left: 1px solid rgba(179, 179, 179, 0.15);
+  border-top: 1px solid rgba(179, 179, 179, 0.15);
+  padding: 10px;
+}
+.main .mainCenter .mainCenterBackground .customTable .dataTables_info {
+  font-size: 14px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #9b9dab;
+  float: left;
+}
+.main .mainCenter .mainCenterBackground .customTable .dataTables_paginate {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #d9dae9;
+  float: right;
+}
+.main .mainCenter .mainCenterBackground .customTable .dataTables_paginate a {
+  display: inline-block;
+  background-color: #111216;
+  color: #d9dae9;
+  padding: 10px 15px;
+  font-size: 13px;
+  border: 1px solid rgba(179, 179, 179, 0.15);
+  margin-left: 5px;
+  color: #fff;
+}
+.main .mainCenter .mainCenterBackground .customTable .dataTables_paginate a.current {
+  background-color: #0099e5;
+  color: #fff;
+}
+.main .mainCenter .mainCenterBackground .customTable .dataTables_paginate a.disabled {
+  opacity: 0.5;
+}
+.main .mainCenter .mainCenterBackground .customTable .dataTables_length {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #9b9dab;
+  float: left;
+}
+.main .mainCenter .mainCenterBackground .customTable .dataTables_length select {
+  padding: 10px 15px;
+  outline: 0;
+  color: #9b9dab;
+  border-radius: 3px;
+  background: #232533;
+  font-size: 0.875em;
+  font-weight: 400;
+  border: 1px solid rgba(179, 179, 179, 0.15);
+}
+.main .mainCenter .mainCenterBackground .customTable .dataTables_filter {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #9b9dab;
+  float: right;
+}
+.main .mainCenter .mainCenterBackground .customTable .dataTables_filter input {
+  margin-left: 10px;
+  padding: 10px 15px;
+  outline: 0;
+  color: #9b9dab;
+  border-radius: 3px;
+  background: #232533;
+  font-size: 0.875em;
+  font-weight: 400;
+  border: 1px solid rgba(179, 179, 179, 0.15);
+}
+.main .mainCenter .mainCenterBackground .customTable:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main .mainCenter .mainCenterBackground .customTable .table-img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: table;
+  margin: 0 auto;
+}
+.main .mainCenter .mainCenterBackground .customTable .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+.main .mainCenter .mainCenterBackground .customTable .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.main .mainCenter .mainCenterBackground .customTable .tableLink {
+  display: table;
+  margin: 0 auto;
+}
+.main .mainCenter .mainCenterBackground .customTable .tableLink a {
+  color: #0099e5;
+  cursor: pointer;
+}
+.main .mainCenter .mainCenterBackground .customTable .tableLink a:hover {
+  color: #d9dae9;
+}
+.main .mainCenter .mainCenterBackground .customTable .tableActions {
+  display: table;
+  margin: 0 auto;
+}
+.main .mainCenter .mainCenterBackground .customTable .tableActions a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 5px;
+  background-color: #232533;
+  color: #d9dae9;
+  border: 1px solid rgba(179, 179, 179, 0.15);
+  cursor: pointer;
+}
+.main .mainCenter .mainCenterBackground .customTable .tableActions a:last-child {
+  margin-right: 0px;
+}
+.main .mainCenter .mainCenterBackground .customForm {
+  margin-top: 15px;
+  border: 1px solid rgba(179, 179, 179, 0.15);
+  padding: 20px;
+  background-color: #232533;
+}
+.main .mainCenter .mainCenterBackground .customForm .customFormItem {
+  margin-bottom: 10px;
+}
+.main .mainCenter .mainCenterBackground .customForm .customFormItem .previewImage {
+  margin-bottom: 10px;
+}
+.main .mainCenter .mainCenterBackground .customForm .customFormItem .previewImage img {
+  max-height: 200px;
+}
+.main .mainCenter .mainCenterBackground .customForm .customFormItem input {
+  padding: 10px 15px;
+  width: 100%;
+  outline: 0;
+  color: #9b9dab;
+  font-size: 0.875em;
+  background: #383b50;
+  border: none;
+}
+.main .mainCenter .mainCenterBackground .customForm .customFormItem input::file-selector-button {
+  color: #9b9dab;
+  background: #111216;
+  font-size: 0.875em;
+  font-weight: 400;
+  border: none;
+}
+.main .mainCenter .mainCenterBackground .customForm .customFormItem textarea {
+  padding: 10px 15px;
+  width: 100%;
+  outline: 0;
+  color: #9b9dab;
+  font-size: 0.875em;
+  background: #383b50;
+  border: none;
+}
+.main .mainCenter .mainCenterBackground .customForm .customFormItem select {
+  padding: 10px 15px;
+  width: 100%;
+  outline: 0;
+  color: #9b9dab;
+  font-size: 0.875em;
+  background: #383b50;
+  border: none;
+}
+.main .mainCenter .mainCenterBackground .customForm .customFormItem .customFormItemLabel {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #9b9dab;
+}
+.main .mainCenter .mainCenterBackground .customForm .customFormItem .customFormItemLabel span {
+  color: #b70000;
+}
+.main .mainCenter .mainCenterBackground .customForm .customFormItem .customFormItemLabel span.maybe {
+  color: #bddbd8;
+}
+.main .mainCenter .mainCenterBackground .customForm .customFormSubmit {
+  margin-top: 10px;
+}
+.main .mainCenter .mainCenterBackground .customForm .customFormSubmit button {
+  outline: none;
+  border: none;
+  padding: 10px 25px;
+  background-color: #0099e5;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+}
+.main .mainCenter .mainCenterBackground .customForm .customFormSubmit button .loadingForm {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
